@@ -3,7 +3,7 @@
 A responsive, single-page personal portfolio built with plain HTML, CSS, and JavaScript for the
 iCodeGuru "Zero to Gen AI Developer" Bootcamp — Week 2 Assignment (Module 2: Web App Development).
 
-**Live demo:** https://portfolio-website-dfiptk6rn-fariha6.vercel.app
+**Live demo:** https://portfolio-website-alpha-khaki.vercel.app/
 **Repository:** https://github.com/Farihach6/portfolio_website
 
 ## Overview
