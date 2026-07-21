@@ -176,6 +176,29 @@ nav {
   transform: translateY(-3px);
 }
 
+/* .btn-outline is designed for the gradient header (white on color).
+   Inside main content, the background is light, so use dark-toned
+   border/text instead or it renders nearly invisible. */
+main .btn-outline {
+  border-color: var(--secondary);
+  color: var(--secondary);
+}
+
+main .btn-outline:hover {
+  background: var(--secondary);
+  color: #fff;
+}
+
+body.dark-mode main .btn-outline {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+body.dark-mode main .btn-outline:hover {
+  background: var(--accent);
+  color: #06202B;
+}
+
 /* ===== Main Sections ===== */
 main {
   max-width: 1000px;

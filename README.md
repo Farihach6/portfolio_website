@@ -3,8 +3,8 @@
 A responsive, single-page personal portfolio built with plain HTML, CSS, and JavaScript for the
 iCodeGuru "Zero to Gen AI Developer" Bootcamp — Week 2 Assignment (Module 2: Web App Development).
 
-**Live demo:** _add your Vercel URL here after deploying_
-**Repository:** https://github.com/Farihach6/my-portfolio
+**Live demo:** https://portfolio-website-dfiptk6rn-fariha6.vercel.app
+**Repository:** https://github.com/Farihach6/portfolio_website
 
 ## Overview
 
@@ -32,7 +32,7 @@ The site is a single page (`index.html`) with these sections:
 ## Folder Structure
 
 ```
-my-portfolio/
+portfolio_website/
 ├── index.html        # Page structure and content (semantic HTML)
 ├── styles.css         # All styling: reset, layout, Flexbox, responsive design, dark mode
 ├── script.js          # Dark mode toggle, fetch calls, contact form handling
@@ -59,7 +59,7 @@ directly in the browser.
 3. Visit `http://localhost:5500` (or the port shown in your terminal).
 
 No environment variables or `.env` file are needed — the two public APIs used
-(`api.quotable.io` and `official-joke-api.appspot.com`) require no API key.
+(`dummyjson.com/quotes/random` and `official-joke-api.appspot.com`) require no API key.
 
 ## Push to GitHub
 
@@ -68,14 +68,14 @@ git init
 git add .
 git commit -m "my portfolio website"
 git branch -M main
-git remote add origin https://github.com/YOUR-USERNAME/my-portfolio.git
+git remote add origin https://github.com/Farihach6/portfolio_website.git
 git push -u origin main
 ```
 
 ## Deploy to Vercel
 
 1. Go to [vercel.com](https://vercel.com) and sign up with **Continue with GitHub**.
-2. Click **Add New Project**, find `my-portfolio` in your repositories, and click **Import**.
+2. Click **Add New Project**, find `portfolio_website` in your repositories, and click **Import**.
 3. Set the Framework Preset to **Other**. Leave all other settings at their defaults — no build
    command or output directory is required for this static site.
 4. Click **Deploy** and wait for the "Congratulations!" screen.
@@ -107,14 +107,12 @@ Every future `git push` to `main` will automatically redeploy the live site.
 | | Dark mode button toggles `body.dark-mode` via `classList.toggle`, updates emoji | ✅ |
 | | `getElementById` + `addEventListener` used (no inline `onclick`) | ✅ |
 | | `fetch()` call with Loading → data → friendly error handling | ✅ (quote API + joke API) |
-| **GitHub** | Public repo with `index.html`, `styles.css`, `script.js` | ⬜ _(complete after you push)_ |
-| **Vercel Deployment** | Live URL opens and displays the portfolio | ⬜ _(complete after you deploy)_ |
+| **GitHub** | Public repo with `index.html`, `styles.css`, `script.js` | ✅ [portfolio_website](https://github.com/Farihach6/portfolio_website) |
+| **Vercel Deployment** | Live URL opens and displays the portfolio | ✅ [Live site](https://portfolio-website-dfiptk6rn-fariha6.vercel.app) |
 | **Personalisation** | Real name, real skills, real projects, no placeholder text | ✅ |
 | **Bonus B1** | Smooth scroll on nav links | ✅ |
 | **Bonus B2** | Second independent `fetch()` API | ✅ |
 | **Bonus B3** | Card lift hover animation with `transform` + `transition` | ✅ |
 | **Bonus B4** | Contact form (name, email, message) | ✅ |
-| **Bonus B5** | Custom domain | ⬜ _(optional, your choice)_ |
 
-The two ⬜ items depend on you pushing to GitHub and deploying to Vercel yourself, as planned —
-everything else is fully implemented and ready to go.
+All required and bonus items are implemented, pushed to GitHub, and deployed live on Vercel.

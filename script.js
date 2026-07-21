@@ -24,13 +24,13 @@ const quoteOutput = document.getElementById('quote-output');
 quoteBtn.addEventListener('click', () => {
   quoteOutput.textContent = 'Loading...';
 
-  fetch('https://api.quotable.io/random')
+  fetch('https://dummyjson.com/quotes/random')
     .then((res) => {
       if (!res.ok) throw new Error('Network response was not ok');
       return res.json();
     })
     .then((data) => {
-      quoteOutput.textContent = `"${data.content}" — ${data.author}`;
+      quoteOutput.textContent = `"${data.quote}" — ${data.author}`;
     })
     .catch(() => {
       quoteOutput.textContent = 'Could not fetch a quote right now. Please try again in a moment.';
